@@ -1,0 +1,2 @@
+# MyTheme
+wordpress主题
