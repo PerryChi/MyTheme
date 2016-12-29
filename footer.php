@@ -20,6 +20,7 @@
     <div class="copyright">
         <span>Theme By <a target="_blank" href="http://www.luxinzhi.com/mytheme">MyTheme</a></span>
         <?php if (dopt('footer_copyright')) echo dopt('footer_copyright_value');?>
+        <!-- 当前在线人数: <?php /*counter_user_online(); */?> 人，访客--><?php /*displayCounter(); */?>
     </div>
     <!--流量统计-->
     <div class="trackcode fr">

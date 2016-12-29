@@ -817,7 +817,7 @@ function no_category_base_request($query_vars)
     }
     return $query_vars;
 }
-//指定登陆IP
+//只允许指定IP进行登陆
 function specify_login_ip()
 {
     $the_url = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';//判断地址后面部分
@@ -908,4 +908,43 @@ function content_code_escape( $content ) {
 }
 add_filter('the_content','content_code_escape' );
 
+//检测在线人数
+function counter_user_online(){
+    $user_online = "online.txt"; //保存人数的文件，网站根目录下
+    touch($user_online);//如果没有此文件，则创建
+    $timeout = 120;//120秒内没有操作用户,则认为已离开
+    $user_arr = file_get_contents($user_online);
+    $user_arr = explode('#',rtrim($user_arr,'#'));
+    $temp = array();
+    foreach($user_arr as $value){
+        $user = explode(",",trim($value));
+        //如果不是本用户IP并时间没有超时则放入到数组中
+        if (($user[0] != getenv('REMOTE_ADDR')) && ($user[1] > time())) {
+            array_push($temp,$user[0].",".$user[1]);
+        }
+    }
+    array_push($temp,getenv('REMOTE_ADDR').",".(time() + ($timeout)).'#'); //保存本用户的信息
+    $user_arr = implode("#",$temp);
+    //写入文件
+    $fp = fopen($user_online,"w");
+    flock($fp,LOCK_EX); //flock() 不能在NFS以及其他的一些网络文件系统中正常工作
+    fputs($fp,$user_arr);
+    flock($fp,LOCK_UN);
+    fclose($fp);
+    echo count($temp);
+}
+
+//统计访客数
+function displayCounter() {
+    $counterFile = "counter.txt"; //保存人数的文件，网站根目录下
+    touch($counterFile);//如果没有此文件，则创建
+    $fp = fopen($counterFile,"rw");
+    $num = fgets($fp,5);
+    $num += 1;
+    print "您是第 "."$num"." 位访客";
+    exec( "rm -rf $counterFile");
+    exec( "echo $num > $counterFile");
+
+    exec( "echo 0 > $counterFile");
+}
 ?>

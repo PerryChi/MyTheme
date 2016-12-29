@@ -27,10 +27,11 @@ class d_tag extends WP_Widget {
 		echo $before_title.$mo.$title.$after_title; 
 		echo '<div class="d_tags">';
 		$tags_list = get_tags('orderby=count&order=DESC&number='.$count.'&offset='.$offset);
-		if ($tags_list) { 
+		if ($tags_list) {
 			foreach($tags_list as $tag) {
-				echo '<a title="'. $tag->count .'个话题" href="'.get_tag_link($tag).'">'. $tag->name .' ('. $tag->count .')</a>'; 
-			} 
+				echo '<a title="'. $tag->count .'个话题" href="'.get_tag_link($tag).'">'. $tag->name .' ('. $tag->count .')</a>';
+				//echo '<a title="'. $tag->count .'个话题" href="'.get_tag_link($tag).'">'. $tag->name .'</a>';
+			}
 		}else{
 			echo '暂无标签！';
 		}

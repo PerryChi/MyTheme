@@ -2154,28 +2154,21 @@ hr {
 }
 
 code, pre {
-    padding: 0 3px 2px;
     font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New",
     Courier, monospace !important;
-    color: #444;
-    border-radius: 3px
 }
 
 code {
     padding: 2px 4px;
-    color: #d14;
+    color: #ef0000;
     margin: 0 3px;
-    background-color: #fbfbfb;
-    border: 1px solid #e1e1e8;
-    white-space: nowrap;
-    font-size: 14px
+    background-color: #ffeeee;
 }
 
 pre {
     display: block;
     padding: 9.5px;
     margin: 0 0 10px;
-    font-size: 11px;
     line-height: 20px;
     word-break: break-all;
     word-wrap: break-word;
@@ -2184,7 +2177,6 @@ pre {
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 2px
 }
 
 pre.prettyprint {
@@ -2265,8 +2257,8 @@ button.close {
 
 body {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: "Consolas", Helvetica, Arial, sans-serif;
+    font-size: 14px;
     line-height: 20px;
     color: #444;
     background-color: #fff;
@@ -2388,14 +2380,16 @@ a:hover, a:focus {
     background-color: #F2F2F2;
     padding: 10px 0 0;
     line-height: 22px;
+    font-size: 13px;
+    color: #666;
 }
 
 .footer a {
-    color: #444;
+    color: #666;
 }
 
 .footer a:hover {
-    color: #444;
+    color: #666;
     text-decoration: underline
 }
 
@@ -4203,10 +4197,6 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     margin: 0 0 15px 0
 }
 
-.article-content ul, .article-content ol {
-    margin: 8px 0 8px 30px
-}
-
 .article-content li:before {
     display: inline-block;
     font-family: FontAwesome;
@@ -4268,6 +4258,10 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .article-content a:hover {
+    text-decoration: underline;
+}
+
+.article-social a:hover{
     text-decoration: none;
 }
 
@@ -4951,15 +4945,16 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .d_tags a {
-    width: 89px;
-    opacity: .70;
-    filter: alpha(opacity=80);
+    opacity: 0.6;
+    filter: alpha(opacity=60);
     color: #fff;
     background-color: #3377aa;
+    /*注意inline-block这个属性*/
     display: inline-block;
-    margin: 0 5px 5px 0;
+    margin: 0 5px 0 0;
     padding: 2px 6px;
-    line-height: 21px
+    line-height: 21px;
+    overflow: hidden;
 }
 
 .d_tags a:hover {
@@ -4967,10 +4962,8 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     color: #fff;
     filter: alpha(opacity=100)
 }
-
 /*文章聚合内容样式*/
 .d_postlist {
-    font-size: 13px;
     color: #999;
 }
 
@@ -5556,27 +5549,15 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     background-color: #f8f8f8;
     border: 1px solid #eaeaea;
     overflow: hidden;
-    padding: 8px 13px 8px 5px;
+    padding: 8px 10px;
     font-size: 14px
 }
 
 .article-content .html-style{
-    border-left: 3px solid #eaeaea;
-    padding: 8px 13px;
-}
-
-.prettyprint.linenums, pre.prettyprint.linenums {
-    -webkit-box-shadow: inset 40px 0 0 #eaeaea, inset 42px 0 0 #33b796;
-    -moz-box-shadow: inset 40px 0 0 #eaeaea, inset 42px 0 0 #33b796;
-    box-shadow: inset 40px 0 0 #eaeaea, inset 42px 0 0 #33b796
-}
-
-.prettyprint.linenums ol, pre.prettyprint.linenums ol {
-    margin: 0 0 0 40px
+    padding: 8px 10px;
 }
 
 .prettyprint.linenums ol li, pre.prettyprint.linenums ol li {
-    padding-left: 6px;
     color: #bebec5;
     line-height: 20px;
     margin-left: 0;
