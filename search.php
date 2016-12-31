@@ -24,5 +24,4 @@
             <?php endif; ?>
         </div>
     </div>
-<?php get_sidebar();
-get_footer(); ?>
+<?php get_sidebar(); get_footer(); ?>

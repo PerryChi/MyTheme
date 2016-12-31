@@ -63,5 +63,4 @@
             <?php if (dopt('d_adpost_03_b')) echo '<div class="banner banner-comment">' . dopt('d_adpost_03') . '</div>'; ?>
         </div>
     </div>
-<?php get_sidebar();
-get_footer(); ?>
+<?php get_sidebar(); get_footer(); ?>
