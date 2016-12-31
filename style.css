@@ -2322,8 +2322,8 @@ a:hover, a:focus {
 }
 
 .content-wrap {
-    float: left;
     width: 100%;
+    position: relative;
 }
 
 .content {
@@ -2357,11 +2357,11 @@ a:hover, a:focus {
 }
 
 .sidebar {
-    float: right;
-    margin: 0 10px 0 -350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 10px 0 0;
     width: 320px;
-    position: relative;
-    padding-left: 20px;
 }
 
 .trackcode {
@@ -4568,7 +4568,6 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     clear: both;
     margin-bottom: 10px;
     background-color: #fff;
-    border-radius: 4px;
 }
 
 .widget a:hover {

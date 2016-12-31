@@ -20,6 +20,6 @@
             include 'modules/excerpt.php';
             ?>
         </div>
+        <?php get_sidebar(); ?>
     </div>
-<?php get_sidebar();
-get_footer(); ?>
+<?php get_footer(); ?>
