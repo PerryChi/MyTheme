@@ -2400,18 +2400,19 @@ a:hover, a:focus {
 }
 
 .connect-us,.about-us{
-    width: 30%;
+    width: 33.333%;
     float: left;
-    margin-right: 20px;
+    margin: 0 10px;
+}
+
+.friend-link{
+    float: left;
+    margin: 0 10px;
 }
 
 .footer-title{
     font-size: 15px;
     font-weight: bold;
-}
-
-.friend-link{
-    float: left;
 }
 
 .friend-link li{
@@ -3293,7 +3294,6 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
     color: #666;
     margin: 10px 0;
     line-height: 25px;
-    *zoom: 1;
     overflow: hidden;
     height: 25px;
 }
@@ -3301,11 +3301,6 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .speedbar i {
     opacity: .50;
     filter: alpha(opacity=50)
-}
-
-.speedbar .btn-group {
-    float: right;
-    margin-left: 6px
 }
 
 .speedbar .toptip {

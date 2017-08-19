@@ -158,8 +158,13 @@
     </div>
 </header>
 <section class="container">
+    <!--最新消息-->
     <div class="speedbar">
-        <div class="toptip"><strong class="text-success"><i class="fa fa-volume-up"></i>
-            </strong> <?php echo dopt('d_tui'); ?></div>
+        <?php if (dopt('new_message')){?>
+        <div class="toptip">
+            <strong class="text-success"><i class="fa fa-volume-up"></i></strong>
+            <?php echo dopt('d_tui'); ?>
+        </div>
+        <?php }?>
     </div>
 <?php if (dopt('d_adsite_01_b')) echo '<div class="banner banner-site">' . dopt('d_adsite_01') . '</div>'; ?>
