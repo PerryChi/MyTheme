@@ -2298,7 +2298,7 @@ a:hover, a:focus {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1060px;
     margin: 0 auto 30px;
     text-align: left;
     *zoom: 1
@@ -2323,11 +2323,12 @@ a:hover, a:focus {
 
 .content-wrap {
     width: 100%;
+    float: left;
     position: relative;
 }
 
 .content {
-    margin-right: 380px;
+    margin-right: 370px;
     margin-left: 10px;
 }
 
@@ -2357,11 +2358,10 @@ a:hover, a:focus {
 }
 
 .sidebar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0 10px 0 0;
-    width: 320px;
+    width: 310px;
+    float: right;
+    margin: 0 10px 0 -320px;
+    position: relative;
 }
 
 .trackcode {
@@ -2394,24 +2394,25 @@ a:hover, a:focus {
 }
 
 .footer-inner {
-    max-width: 1200px;
+    max-width: 1060px;
     margin: 0 auto;
     padding: 10px 0;
 }
 
 .connect-us,.about-us{
-    width: 30%;
+    width: 33.333%;
     float: left;
-    margin-right: 20px;
+    margin: 0 10px;
+}
+
+.friend-link{
+    float: left;
+    margin: 0 10px;
 }
 
 .footer-title{
     font-size: 15px;
     font-weight: bold;
-}
-
-.friend-link{
-    float: left;
 }
 
 .friend-link li{
@@ -2422,7 +2423,7 @@ a:hover, a:focus {
 .copyright{
     text-align: center;
     padding: 10px 0;
-    max-width: 1200px;
+    max-width: 1060px;
     margin: 0 auto;
     border-top: 1px solid #dedede;
 }
@@ -3293,7 +3294,6 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
     color: #666;
     margin: 10px 0;
     line-height: 25px;
-    *zoom: 1;
     overflow: hidden;
     height: 25px;
 }
@@ -3301,11 +3301,6 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .speedbar i {
     opacity: .50;
     filter: alpha(opacity=50)
-}
-
-.speedbar .btn-group {
-    float: right;
-    margin-left: 6px
 }
 
 .speedbar .toptip {
@@ -3925,8 +3920,8 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .excerpt header .label {
     margin-right: 8px;
     position: relative;
-	color: #fff;
-	float: left;
+    color: #fff;
+    float: left;
     padding: 3px 6px;
 }
 
@@ -4173,19 +4168,24 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .article-content h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin: 20px 0;
-    padding: 12px;
-    line-height: 16px;
+    padding: 8px 12px;
+    line-height: 1.5;
     background-color: #fbfbfb;
-    border-left: 3px solid #eaeaea;
+    border-left: 3px solid #08c;
     font-family: "Microsoft Yahei";
 }
 
 .article-content h3 {
     font-size: 16px;
     font-weight: bold;
+    margin: 20px 0;
+    padding: 0 12px;
+    line-height: 1.5;
+    border-left: 3px solid #800080;
+    font-family: "Microsoft Yahei";
 }
 
 .article-content h4 {
@@ -6359,7 +6359,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .top-nav {
     height: 30px;
     margin: 0 auto;
-    max-width: 1200px
+    max-width: 1060px;
 }
 
 .top-nav-left {
@@ -6425,7 +6425,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 
 .top-menu {
     margin: 0 auto;
-    max-width: 1200px
+    max-width: 1060px;
 }
 
 .nav-search {

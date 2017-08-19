@@ -9,7 +9,7 @@ $options = array(
     "d_adindex_02_b", "d_adindex_02", "d_adindex_01_b", "d_adindex_01", "d_adindex_03_b", "d_adindex_03", "d_adpost_01_b",
     "d_adpost_01", "d_adpost_02_b", "d_adpost_02", "d_adpost_03_b", "d_adpost_03", "d_sign_b", "d_jquerybom_b",
     "d_ajaxpager_b", "d_thumbnail_b", "d_bdshare_b", "d_related_count", "d_post_views_b", "d_post_author_b","footer_about_us",
-    "footer_about_us_value","footer_copyright","footer_friend_link","footer_friend_link_value",
+    "footer_about_us_value","footer_copyright","footer_friend_link","footer_friend_link_value","new_message",
     "footer_copyright_value","d_post_comment_b", "d_post_time_b", "hot_list_title", "hot_list_number", "hot_list_date",
     "hot_list_check", "d_post_like_b", "d_singleMenu_b", "Mobiled_adindex_02_b", "Mobiled_adindex_02", "Mobiled_adpost_01_b",
     "Mobiled_adpost_01", "Mobiled_adpost_02_b", "Mobiled_adpost_02", "d_spamComments_b", "d_topindex_01_b",
@@ -79,9 +79,12 @@ function mytheme_admin()
                     <tr>
                         <td class="d_tit">最新消息</td>
                         <td>
-                            <textarea name="d_tui" id="d_tui" type="textarea"
-                                      rows=""><?php echo dopt('d_tui'); ?></textarea>
+                            <label class="checkbox inline">
+                            <input type="checkbox" id="new_message"
+                                   name="new_message" <?php if (dopt('new_message')) echo 'checked="checked"' ?>>开启
+                            </label>
                             <span class="d_tip">最新消息会显示在网站logo下侧</span>
+                            <textarea name="d_tui" id="d_tui" type="textarea"><?php echo dopt('d_tui'); ?></textarea>
                         </td>
                     </tr>
                     <tr>
