@@ -22,16 +22,16 @@ $status_obj = get_post_status_object($status);
 
 if ( !comments_open($comment_post_ID) ) {
     do_action('comment_closed', $comment_post_ID);
-    err(__('Sorry, comments are closed for this item.', 'Nana')); // 将 wp_die 改为错误提示
+    err(__('Sorry, comments are closed for this item.')); // 将 wp_die 改为错误提示
 } elseif ( 'trash' == $status ) {
     do_action('comment_on_trash', $comment_post_ID);
-    err(__('Invalid comment status.', 'Nana')); // 将 exit 改为错误提示
+    err(__('Invalid comment status.')); // 将 exit 改为错误提示
 } elseif ( !$status_obj->public && !$status_obj->private ) {
     do_action('comment_on_draft', $comment_post_ID);
-    err(__('Invalid comment status.', 'Nana')); // 将 exit 改为错误提示
+    err(__('Invalid comment status.')); // 将 exit 改为错误提示
 } elseif ( post_password_required($comment_post_ID) ) {
     do_action('comment_on_password_protected', $comment_post_ID);
-    err(__('Password Protected', 'Nana')); // 将 exit 改为错误提示
+    err(__('Password Protected')); // 将 exit 改为错误提示
 } else {
     do_action('pre_comment_on_post', $comment_post_ID);
 }
@@ -59,11 +59,11 @@ if ( $user->ID ) {
     }
 } else {
     if ( get_option('comment_registration') || 'private' == $status )
-        err(__('对不起，您必须登录后才能发表评论。', 'Nana')); // 将 wp_die 改为错误提示
+        err(__('对不起，您必须登录后才能发表评论！')); // 将 wp_die 改为错误提示
 }
 
 $comment_type = '';
-if (get_my_option('require_name_email') && !$user->ID) {
+if (dopt('require_name_email') && !$user->ID) {
     if (6 > strlen($comment_author_email) || '' == $comment_author)
         err('请填写昵称和邮箱！'); // 將 wp_die 改為錯誤提示
     elseif (!is_email($comment_author_email))
@@ -123,6 +123,7 @@ while ($tmp_c->comment_parent != 0) {
     $comment_depth++;
     $tmp_c = get_comment($tmp_c->comment_parent);
 }
+
 //以下是評論式樣, 不含 "回覆". 要用你模板的式樣 copy 覆蓋.
 
 echo '<li ';
