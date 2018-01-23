@@ -69,13 +69,7 @@ $_like = dopt('d_post_like_b');
                         <a href="javascript:;" data-action="ding" data-id="<?php the_ID(); ?>" id="Addlike"
                             class="action<?php if (isset($_COOKIE['bigfa_ding_' . $post->ID])) echo ' actived'; ?>">
                             <i class="fa fa-heart-o"></i>
-                            <span class="count">
-                                <?php if (get_post_meta($post->ID, 'bigfa_ding', true)) {
-                                    echo get_post_meta($post->ID, 'bigfa_ding', true);
-                                } else {
-                                    echo '0';
-                                } ?>
-                            </span>喜欢
+                            <span class="count"><?php if (get_post_meta($post->ID, 'bigfa_ding', true)) {echo get_post_meta($post->ID, 'bigfa_ding', true);} else {echo '0';} ?></span>喜欢
                         </a>
                     </span>
                 <?php } ?>
