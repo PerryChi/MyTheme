@@ -2169,7 +2169,6 @@ pre {
     display: block;
     padding: 9.5px;
     margin: 0 0 10px;
-    line-height: 20px;
     word-break: break-all;
     word-wrap: break-word;
     white-space: pre;
@@ -2257,9 +2256,11 @@ button.close {
 
 body {
     margin: 0;
-    font-family: "Consolas", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    /*font-family: "Consolas", Helvetica, Arial, sans-serif;*/
+    font-family: 'Consolas','Helvetica Neue', Helvetica, 'Lucida Grande', Arial, 'Hiragino Sans GB', 微软雅黑, 'WenQuanYi Micro Hei', STHeiti, SimSun, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    line-height: 1.5;
     color: #444;
     background-color: #fff;
     overflow-x: hidden;
@@ -2276,7 +2277,7 @@ iframe {
 }
 
 a {
-    color: #3377aa;
+    color: #1982D1;
     text-decoration: none
 }
 
@@ -2292,7 +2293,7 @@ a:hover, a:focus {
 }
 
 ::-moz-selection {
-    background: #3377aa;
+    background: #1982D1;
     color: #fff;
     text-shadow: none
 }
@@ -2501,7 +2502,7 @@ a:hover, a:focus {
 .pagesider-menu li.current-menu-item a {
     color: #444;
     background-color: #fff;
-    border-left-color: #3377aa;
+    border-left-color: #1982D1;
     margin-right: -1px;
     position: relative;
     z-index: 2
@@ -2544,7 +2545,7 @@ a:hover, a:focus {
 .page-navbar li.current_page_item a, .page-navbar li.current-post-ancestor a,
 .page-navbar li ul {
     background-color: #f7f7f7;
-    border-left-color: #3377aa;
+    border-left-color: #1982D1;
     color: #666
 }
 
@@ -2702,7 +2703,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-info {
     color: #fff;
-    background-color: #3377aa
+    background-color: #1982D1
 }
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active,
@@ -3061,7 +3062,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 #header {
-    background: #3377aa;
+    background: #1982D1;
     position: relative
 }
 
@@ -3199,7 +3200,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 .pagination ul > .active > a, .pagination ul > .active > span {
-    background-color: #3377aa;
+    background-color: #1982D1;
     color: #fff
 }
 
@@ -3227,7 +3228,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 .ias_trigger a:hover {
-    background-color: #3377aa;
+    background-color: #1982D1;
     color: #fff
 }
 
@@ -3252,7 +3253,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 .commentnav .current {
-    background-color: #3377aa;
+    background-color: #1982D1;
     color: #fff
 }
 
@@ -3877,7 +3878,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .excerpt header h2:hover,.excerpt h2 a:hover {
-    color: #3377aa;
+    color: #1982D1;
 }
 
 .excerpt:before, .excerpt:after {
@@ -3926,7 +3927,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .excerpt h2 {
-    font-size: 17px;
+    font-size: 18px;
     margin: 0;
     position: relative;
     line-height: 23px;
@@ -3982,7 +3983,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     right: 20px;
     top: 23px;
     color: #fff;
-    background-color: #3377aa;
+    background-color: #1982D1;
     padding: 1px 8px 0;
     min-width: 14px;
     text-align: center
@@ -3991,7 +3992,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .comm i {
     display: inline-block;
     border: 5px dotted;
-    border-color: #3377aa transparent;
+    border-color: #1982D1 transparent;
     border-bottom-width: 0;
     border-left-width: 0;
     position: absolute;
@@ -4157,8 +4158,8 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .article-title a {
     color: #444;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 26px;
+    line-height: 1.7;
 }
 
 .article-content {
@@ -4254,7 +4255,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .article-content a {
-    color: #3377aa
+    color: #1982D1
 }
 
 .article-content a:hover {
@@ -4727,7 +4728,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .d_comment div.muted i {
-    color: #3377aa;
+    color: #1982D1;
     font-style: normal;
     margin-right: 5px;
 }
@@ -4798,7 +4799,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .widget_calendar table tbody td a {
     display: block;
     margin: 0 3px;
-    background-color: #3377aa;
+    background-color: #1982D1;
     color: #fff
 }
 
@@ -4932,7 +4933,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .d_tags a:nth-child(9n+6) {
-    background-color: #3377aa
+    background-color: #1982D1
 }
 
 .d_tags a:nth-child(9n+7) {
@@ -4947,7 +4948,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     opacity: 0.6;
     filter: alpha(opacity=60);
     color: #fff;
-    background-color: #3377aa;
+    background-color: #1982D1;
     /*注意inline-block这个属性*/
     display: inline-block;
     margin: 0 5px 0 0;
@@ -5090,7 +5091,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 
 .comment-reply-link {
     margin-left: 6px;
-    color: #3377aa
+    color: #1982D1
 }
 
 #postcomments a:hover {
@@ -5137,7 +5138,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     font-size: 15px;
     padding: 12px 10px 12px 0;
     line-height: 14px;
-    color: #3377aa;
+    color: #1982D1;
     font-weight: normal;
     border-bottom: 1px solid #eaeaea;
 }
@@ -5441,7 +5442,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .related_box .relate_item {
-    background-color: #3377aa;
+    background-color: #1982D1;
     color: #fff;
     padding: 1px 7px;
     margin-right: 3px;
@@ -5835,7 +5836,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .d_subscribe .rsstxt {
-    border: 1px solid #3377aa;
+    border: 1px solid #1982D1;
     float: left;
     padding: 0px 8px;
     width: 208px;
@@ -5852,7 +5853,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     width: 84px;
     height: 32px;
     border: 0;
-    background: #3377aa;
+    background: #1982D1;
     color: #fff;
     letter-spacing: 2px;
     font-size: 15px;
@@ -6190,7 +6191,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .hot-posts h2 {
     line-height: 45px;
     font-weight: normal;
-    color: #3377aa;
+    color: #1982D1;
     font-size: 16px
 }
 
@@ -6472,7 +6473,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .site-title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     display: block;
     height: 40px;
@@ -6528,7 +6529,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 #site-nav .down-menu > li > a:hover {
-    color: #3377aa;
+    color: #1982D1;
 }
 
 #site-nav .down-menu ul {
