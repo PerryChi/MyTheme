@@ -2178,10 +2178,6 @@ pre {
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-pre.prettyprint {
-    margin-bottom: 20px
-}
-
 pre code {
     padding: 0;
     color: inherit;
@@ -2277,7 +2273,7 @@ iframe {
 }
 
 a {
-    color: #1982D1;
+    color: #0366d6;
     text-decoration: none
 }
 
@@ -2293,7 +2289,7 @@ a:hover, a:focus {
 }
 
 ::-moz-selection {
-    background: #1982D1;
+    background: #0366d6;
     color: #fff;
     text-shadow: none
 }
@@ -2502,7 +2498,7 @@ a:hover, a:focus {
 .pagesider-menu li.current-menu-item a {
     color: #444;
     background-color: #fff;
-    border-left-color: #1982D1;
+    border-left-color: #0366d6;
     margin-right: -1px;
     position: relative;
     z-index: 2
@@ -2545,7 +2541,7 @@ a:hover, a:focus {
 .page-navbar li.current_page_item a, .page-navbar li.current-post-ancestor a,
 .page-navbar li ul {
     background-color: #f7f7f7;
-    border-left-color: #1982D1;
+    border-left-color: #0366d6;
     color: #666
 }
 
@@ -2703,7 +2699,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-info {
     color: #fff;
-    background-color: #1982D1
+    background-color: #0366d6
 }
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active,
@@ -3062,7 +3058,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 #header {
-    background: #1982D1;
+    background: #0366d6;
     position: relative
 }
 
@@ -3200,7 +3196,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 .pagination ul > .active > a, .pagination ul > .active > span {
-    background-color: #1982D1;
+    background-color: #0366d6;
     color: #fff
 }
 
@@ -3228,7 +3224,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 .ias_trigger a:hover {
-    background-color: #1982D1;
+    background-color: #0366d6;
     color: #fff
 }
 
@@ -3253,7 +3249,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 .commentnav .current {
-    background-color: #1982D1;
+    background-color: #0366d6;
     color: #fff
 }
 
@@ -3878,7 +3874,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .excerpt header h2:hover,.excerpt h2 a:hover {
-    color: #1982D1;
+    color: #0366d6;
 }
 
 .excerpt:before, .excerpt:after {
@@ -3983,7 +3979,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     right: 20px;
     top: 23px;
     color: #fff;
-    background-color: #1982D1;
+    background-color: #0366d6;
     padding: 1px 8px 0;
     min-width: 14px;
     text-align: center
@@ -3992,7 +3988,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .comm i {
     display: inline-block;
     border: 5px dotted;
-    border-color: #1982D1 transparent;
+    border-color: #0366d6 transparent;
     border-bottom-width: 0;
     border-left-width: 0;
     position: absolute;
@@ -4255,7 +4251,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .article-content a {
-    color: #1982D1
+    color: #0366d6
 }
 
 .article-content a:hover {
@@ -4293,6 +4289,131 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .article-content img {
     display: block
 }
+
+
+/*---------------------------------------------------------
+-----------------------------------------------------------
+-----------------------HIGH LIGHT-------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------*/
+.hljs {
+    display: block; padding: 0.5em;
+    color: #333;
+    background: #f8f8f8
+}
+
+.hljs-comment,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-javadoc {
+    color: #998;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.javascript .hljs-title,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+    color: #900;
+    font-weight: bold
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+    color: #099;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.tex .hljs-formula {
+    color: #d14
+}
+
+.hljs-title,
+.hljs-id,
+.coffeescript .hljs-params,
+.scss .hljs-preprocessor {
+    font-weight: bold
+}
+
+.javascript .hljs-title,
+.lisp .hljs-title,
+.clojure .hljs-title,
+.hljs-subst {
+    font-weight: normal
+}
+
+.hljs-class .hljs-title,
+.haskell .hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+    color: #458;
+    font-weight: bold
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+    color: #000080;
+    font-weight: normal
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+    color: #008080
+}
+
+.hljs-regexp {
+    color: #009926
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+    color: #990073
+}
+
+.hljs-built_in,
+.lisp .hljs-title,
+.clojure .hljs-built_in {
+    color: #0086b3
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+    color: #999;
+    font-weight: bold
+}
+
+.hljs-deletion {
+    background: #fdd
+}
+
+.hljs-addition {
+    background: #dfd
+}
+
+.diff .hljs-change {
+    background: #0086b3
+}
+
+.hljs-chunk {
+    color: #aaa
+}
+
 
 .article-footer {
     background-color: #fff;
@@ -4728,7 +4849,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .d_comment div.muted i {
-    color: #1982D1;
+    color: #0366d6;
     font-style: normal;
     margin-right: 5px;
 }
@@ -4799,7 +4920,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .widget_calendar table tbody td a {
     display: block;
     margin: 0 3px;
-    background-color: #1982D1;
+    background-color: #0366d6;
     color: #fff
 }
 
@@ -4933,7 +5054,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .d_tags a:nth-child(9n+6) {
-    background-color: #1982D1
+    background-color: #0366d6
 }
 
 .d_tags a:nth-child(9n+7) {
@@ -4948,7 +5069,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     opacity: 0.6;
     filter: alpha(opacity=60);
     color: #fff;
-    background-color: #1982D1;
+    background-color: #0366d6;
     /*注意inline-block这个属性*/
     display: inline-block;
     margin: 0 5px 0 0;
@@ -5091,7 +5212,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 
 .comment-reply-link {
     margin-left: 6px;
-    color: #1982D1
+    color: #0366d6
 }
 
 #postcomments a:hover {
@@ -5138,7 +5259,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     font-size: 15px;
     padding: 12px 10px 12px 0;
     line-height: 14px;
-    color: #1982D1;
+    color: #0366d6;
     font-weight: normal;
     border-bottom: 1px solid #eaeaea;
 }
@@ -5220,8 +5341,115 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     display: none
 }
 
+
+/* DEFAULT BUTTON */
+.btn_small,
+.btn_middle,
+.btn_larger,
+.btn-small,
+.btn-middle,
+.btn-larger {
+    line-height: normal !important;
+}
+
+.btn_default,
+.btn-default {
+    color: #fff;
+    background: #3e89fa;
+    border-bottom-color: #2b71d9;
+}
+
+.btn_default:visited,
+.btn-default:visited {
+    color: #fff
+}
+
+.btn,
+.btn_default,
+.btn_sub,
+.btn_attention,
+.btn-default,
+.btn-sub,
+.btn-sub-b,
+.btn-attention,
+.btn-encourage,
+.btn-link,
+button {
+    cursor: pointer;
+}
+
+.btn,
+.btn_default,
+.btn_sub,
+.btn_disable,
+.btn_attention,
+.btn-default,
+.btn-sub,
+.btn-sub-b,
+.btn-disable,
+.btn-disabled,
+.btn-attention,
+.btn-encourage,
+.btn-link,
+button {
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    border: 0;
+    text-decoration: none;
+}
+
+.btn_default:hover,
+.btn-default:hover,
+.btn_default:focus,
+.btn-default:focus,
+.btn_default:active,
+.btn-default:active {
+    background: #2a7dfa;
+    border-bottom-color: #2663bf;
+    color: #fff
+}
+
+.btn_default:disabled,
+.btn-default:disabled,
+.btn_default-disabled,
+.btn-default-disabled {
+    background: #a2c5fa;
+    border-bottom-color: #8dabd9;
+    color: #fff;
+    cursor: not-allowed
+}
+
+.btn_small,
+.btn-small {
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.btn_middle,
+.btn-middle {
+    padding: 7px 14px;
+    font-size: 12px;
+}
+
 #comment {
-    *width: 98.3%
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    word-wrap: break-word;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    resize: none;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#comment:focus,
+#comment:hover {
+    border-color: #3e89fa;
+    outline: 0
 }
 
 .comt-smilie {
@@ -5309,7 +5537,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .comt-error {
-    color: #d9534f
+    color: #c00
 }
 
 #loading {
@@ -5388,6 +5616,30 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     *bottom: -3px
 }
 
+
+.comt-comterinfo input[type=text] {
+    font-size: 12px;
+    line-height: 18px;
+    height: 28px;
+    width: 200px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px 0 0;
+    border-radius: 2px;
+    color: #171d25;
+    vertical-align: middle;
+    border: 1px solid #d1d2d3;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.comt-comterinfo input[type=text]:focus,
+.comt-comterinfo input[type=text]:hover {
+    border-color: #2277da;
+    outline: 0
+}
+
 #cancel-comment-reply-link {
     display: none;
     color: #bbb;
@@ -5442,7 +5694,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .related_box .relate_item {
-    background-color: #1982D1;
+    background-color: #0366d6;
     color: #fff;
     padding: 1px 7px;
     margin-right: 3px;
@@ -5555,50 +5807,6 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 
 .article-content .html-style{
     padding: 8px 10px;
-}
-
-.prettyprint.linenums ol li, pre.prettyprint.linenums ol li {
-    color: #bebec5;
-    line-height: 20px;
-    margin-left: 0;
-    list-style: decimal
-}
-
-.prettyprint.linenums ol li:before, pre.prettyprint.linenums ol li:before {
-    content: "";
-    width: 0
-}
-
-.prettyprint .com {
-    color: #666
-}
-
-.prettyprint .lit {
-    color: #c0c
-}
-
-.prettyprint .pun, .prettyprint .opn, .prettyprint .clo {
-    color: #0a0
-}
-
-.prettyprint .fun {
-    color: #dc322f
-}
-
-.prettyprint .str, .prettyprint .atv {
-    color: #c28f5b
-}
-
-.prettyprint .kwd, .prettyprint .tag {
-    color: #f92659
-}
-
-.prettyprint .typ, .prettyprint .atn, .prettyprint .dec, .prettyprint .var {
-    color: #0a0
-}
-
-.prettyprint .pln {
-    color: #00f
 }
 
 .navbar .screen-mini {
@@ -5836,7 +6044,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 .d_subscribe .rsstxt {
-    border: 1px solid #1982D1;
+    border: 1px solid #0366d6;
     float: left;
     padding: 0px 8px;
     width: 208px;
@@ -5853,7 +6061,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     width: 84px;
     height: 32px;
     border: 0;
-    background: #1982D1;
+    background: #0366d6;
     color: #fff;
     letter-spacing: 2px;
     font-size: 15px;
@@ -6191,7 +6399,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 .hot-posts h2 {
     line-height: 45px;
     font-weight: normal;
-    color: #1982D1;
+    color: #0366d6;
     font-size: 16px
 }
 
@@ -6529,7 +6737,7 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
 }
 
 #site-nav .down-menu > li > a:hover {
-    color: #1982D1;
+    color: #0366d6;
 }
 
 #site-nav .down-menu ul {
@@ -6897,23 +7105,3 @@ a.label-inverse:hover .label-arrow, a.badge-inverse:hover .label-arrow {
     }
 }
 
-/*更改多说样式*/
-.ds-comment {
-    border-top: none !important;
-}
-
-.ds-powered-by {
-    display: none;
-}
-
-.ds-thread-title a {
-    line-height: 1.5;
-}
-
-.ds-textarea-wrapper, .ds-gradient-bg {
-    background: none !important;
-}
-
-.ds-post-options {
-    border-bottom-color: #ccc !important;
-}

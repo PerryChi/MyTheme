@@ -156,7 +156,7 @@
         <div class="clear"></div>
     </div>
 </header>
-<section class="container">
+<div class="container">
     <!--最新消息-->
     <div class="speedbar">
         <?php if (dopt('new_message')){?>
